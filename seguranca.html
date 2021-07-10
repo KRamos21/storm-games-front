@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/seguranca.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Conta - Segurança</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <button class="menu-mobile">
+      <img class="menu-mobile__imagem" src="./images/menu.svg" alt="Menu mobile">
+    </button>
+    <img class="logo--mobile" src="./images/logo-horizontal.svg" alt="Logo do website">
+    <div class="pesquisa-e-compras">
+      <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar">
+      <img class="carrinho-de-compras" src="./images/icone-compras.svg" alt="Carrinho de compras">
+    </div>
+  </header>
+
+  <main>
+    <section class="config">
+      <article class="config__article config__article--com-borda">
+        <h1 class="config__titulo">Alterar Senha</h1>
+        <p class="config__texto">Para sua segurança, recomendamos enfaticamente que escolha uma senha única, que não seja usada em qualquer outra conta on-line</p>
+      </article>
+
+      <form action="">
+        <article class="config__article config__article--com-borda">
+          <h2 class="config__titulo">Senha</h2>
+    
+          <div class="config__caixa-info">
+            <div class="config__informacao">
+              <label class="config__texto config__texto--menor" for="senhaAtual">Senha atual:</label>
+              <input class="config__input" type="password" name="senhaAtual" id="password" value="SenhaAtual123">
+            </div>
+          </div>
+          
+          <div class="config__caixa-info">
+            <div class="config__informacao">
+              <label class="config__texto config__texto--menor" for="novaSenha">Nova senha:</label>
+              <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="NovaSenha123">
+            </div>
+          </div>
+  
+          <div class="config__caixa-info">
+            <div class="config__informacao">
+              <label class="config__texto config__texto--menor" for="confirmarNovaSenha">Confirme sua nova senha:</label>
+              <input class="config__input" type="password" name="confirmarNovaSenha" id="confirmarNovaSenha" value="NovaSenha123">
+            </div>
+          </div>
+        </article>
+        
+        <article class="config__article">
+          <h2 class="config__titulo config__titulo--centralizado">Requisitos</h2>
+          <p class="config__texto config__texto--centralizado">Sua senha precisa ter mais de 7 caracteres.</p>
+          <p class="config__texto config__texto--centralizado">Sua senha precisa pelo menos 1 número.</p>
+          <p class="config__texto config__texto--centralizado">Sua senha não pode conter espaços.</p>
+        </article>
+  
+        <div class="config__div-botoes">
+          <button class="config__botao" type="submit">Salvar mudanças</button>
+          <button class="config__botao" type="reset">Descartar mudanças</button>
+        </div>
+      </form>
+
+    </section>
+
+    <section class="config config--finalizar-sessao">
+      <h2 class="config__titulo config__titulo--finalizar-sessao">Finalizar sessões</h2>
+      <p class="config__texto">Finalize sessões em qualquer outro local em que a sua conta esteja sendo usada, incluindo todos os outros navegadores, telefones, consoles ou qualquer outro dispositivo.</p>
+      <button class="config__botao config__botao--finalizar-sessao" type="submit">Finalizar outras sessões</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="media-social">
+      <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+
+      <article class="media-social__links">
+        <a class="media-social__a" href="https://www.facebook.com/">
+          <img src="./images/facebook-icon.svg" alt="Facebook">
+        </a>
+          
+        <a class="media-social__a" href="https://www.instagram.com/">
+          <img src="./images/instagram-icon.svg" alt="Instagram">
+        </a>
+        
+        <a class="media-social__a" href="https://twitter.com/">
+          <img src="./images/twitter-icon.svg" alt="Twitter">
+        </a>
+      </article>
+    </section>
+
+    <section class="termos-e-politicas">
+      <p class="termos-e-politicas__p">Termos de Serviço</p>
+      <p class="termos-e-politicas__p">Política de Privacidade</p>
+      <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+    </section>
+  </footer>
+  
+</body>
+</html>

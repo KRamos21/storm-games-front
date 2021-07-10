@@ -40,111 +40,71 @@
 
 /* MAIN */
 
-.config {
+.historico {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
   margin: 0 16px 40px;
 }
 
-.config__article {
+.historico__article {
   margin-bottom: 40px;
 }
 
-.config__article--com-borda {
-  padding-bottom: 20px;
+.historico__article--com-borda {
   border-bottom: solid 1px #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.config__titulo {
+.historico__titulo {
   color: #fff;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.config__texto {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: justify;
-  line-height: 23px;
-}
-
-
-.config__caixa-info {
+.historico__colunas {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0px 5px;
+}
+
+.historico__titulo--colunas {
+  font-size: 20px;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.historico__titulo--preco, .historico__preco, .historico__titulo--status, .historico__status {
+  text-align: end;
+}
+
+.historico__data {
   background-color: #444968;
-  padding: 10px;
-  margin-top: 20px;
   border-radius: 12px;
 }
 
-.config__informacao {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.config__texto--menor {
+.historico__texto {
+  color: #fff;
+  font-weight: 400;
   font-size: 16px;
-}
-
-.config__input {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
+  /* text-align: justify; */
   line-height: 23px;
-  background-color: #444968;
-  padding: 0px;
-  border: none;
-  margin-top: 5px;
+  flex: 1;
 }
 
-.config__caixa-info__botao {
-  background-color: #fff;
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+.historico__texto--data {
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
-.config__div-botoes {
+.historico__informacoes {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-}
-
-.config__botao {
-  width: 240px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #F27B13;
-  padding: 20px 10px;
-  border-radius: 3px;
-  margin-bottom: 30px;
-}
-
-.config--excluir {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.config__titulo--excluir {
-  text-transform: uppercase;
-}
-
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
-  width: 300px;
-  margin-top: 30px;
+  padding: 0px 5px 0px 10px;
+  margin-bottom: 20px;
 }
 
 /* FOOTER */

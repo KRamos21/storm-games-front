@@ -104,11 +104,14 @@
   margin-top: 5px;
 }
 
-.config__caixa-info__botao {
-  background-color: #fff;
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+.config__titulo--centralizado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.config__texto--centralizado {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .config__div-botoes {
@@ -128,21 +131,17 @@
   margin-bottom: 30px;
 }
 
-.config--excluir {
+.config--finalizar-sessao {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.config__titulo--excluir {
-  text-transform: uppercase;
+.config__titulo--finalizar-sessao {
+  text-align: center;
 }
 
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
+.config__botao--finalizar-sessao {
   width: 300px;
   margin-top: 30px;
 }
