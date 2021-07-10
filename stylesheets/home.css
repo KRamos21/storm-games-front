@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.body {
+    background-color: #444968;
+}
+  
+/* HEADER */
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 40px;
+}
+  
+.menu-mobile {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-right: solid 1px white;
+    color: white;
+}
+  
+.menu-mobile__imagem {
+    width: 25px;
+}
+  
+.pesquisa-e-compras {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+  
+.pesquisa {
+    margin-right: 20px;
+}
+
+/* MAIN */
+  
+/* FOOTER */
+  
+.footer {
+    background-color: #000;
+    padding: 30px 15px 0px;
+}
+  
+.media-social {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 10px;
+}
+  
+.media-social__titulo {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+  
+.media-social__links {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.termos-e-politicas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.termos-e-politicas__p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
