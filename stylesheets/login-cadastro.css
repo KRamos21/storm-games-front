@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 375px;
+  background-color: #444968;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 0;
+}
+
+.menu-mobile {
+  padding: 5px 15px;
+  background-color: #000;
+  cursor: pointer;
+  border: #000;
+}
+
+.menu-mobile__imagem {
+  width: 25px;
+}
+
+.pesquisa-e-compras {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.pesquisa {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+.login {
+    background-image: url('../images/login-cad/fundo-login.jpg');
+}
+
+.login__div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login__buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+input, a {
+    text-align: center;
+}
+
+.login__btn-text {
+    font-family: "Russo One", sans-serif;
+}
+
+.login__btn {
+    font-family: "Russo One", sans-serif;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+  padding: 30px 15px 0px;
+}
+
+.media-social {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 10px;
+}
+
+.media-social__titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.media-social__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.termos-e-politicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.termos-e-politicas__p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
