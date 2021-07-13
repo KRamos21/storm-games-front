@@ -40,84 +40,94 @@
 
 /* MAIN */
 
-.config {
+.cartao {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
   margin: 0 16px 40px;
 }
 
-.config__article {
-  margin-bottom: 40px;
+.cartao__article {
+  margin-bottom: 20px;
 }
 
-.config__article--com-borda {
+.cartao__article--com-borda {
   padding-bottom: 10px;
   border-bottom: solid 1px #fff;
-  margin-bottom: 40px;
 }
 
-.config__titulo {
+.cartao__titulo {
   color: #fff;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.config__texto {
+.cartao__texto {
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   line-height: 23px;
 }
 
-
-.config__caixa-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #444968;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 12px;
-}
-
-.config__informacao {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.config__texto--menor {
-  font-size: 16px;
-}
-
-.config__input {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  background-color: #444968;
-  padding: 0px;
-  border: none;
-  margin-top: 5px;
-}
-
-.config__caixa-info__botao {
+.cartao__caixa {
   background-color: #fff;
   border-radius: 12px;
-  width: 40px;
-  height: 40px;
+  margin-top: 40px;
 }
 
-.config__div-botoes {
+.cartao__faixa-superior {
+  display: flex;
+  background-color: #5470C4;
+
+  padding: 10px 25px 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.cartao__bandeira {
+  margin-right: 15px;
+}
+
+.cartao__corpo-info {
+  padding: 10px 15px;
+}
+
+.cartao__texto--preto {
+  color: #000;
+}
+
+.cartao__texto--negrito {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.cartao__caixa__botoes {
+  padding: 10px 15px;
+}
+
+.cartao__caixa__botao {
+  width: 90px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #F27B13;
+  padding: 5px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.cartao__titulo--centralizado {
+ text-align: center; 
+}
+
+.cartao__div-botoes {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.config__botao {
+.cartao__botao {
   width: 240px;
   font-size: 20px;
   font-weight: 700;
@@ -126,25 +136,6 @@
   padding: 20px 10px;
   border-radius: 3px;
   margin-bottom: 30px;
-}
-
-.config--excluir {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.config__titulo--excluir {
-  text-transform: uppercase;
-}
-
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
-  width: 300px;
-  margin-top: 30px;
 }
 
 /* FOOTER */

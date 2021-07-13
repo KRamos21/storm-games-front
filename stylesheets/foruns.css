@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .body {
@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .menu-mobile {
@@ -40,71 +40,60 @@
 
 /* MAIN */
 
-.historico {
-  background-color: #1B1D2A;
-  padding: 10px;
-  border-radius: 12px;
-  margin: 0 16px 40px;
+.regras-e-historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 16px 40px;
 }
 
-.historico__article {
-  margin-bottom: 40px;
+.regras-e-historico__ancora {
+  text-decoration: none;
 }
 
-.historico__article--com-borda {
-  border-bottom: solid 1px #fff;
+.regras-e-historico__div {
+  display: flex;
+  align-items: center;
+  width: 343px;
+  background-color: #F27B13;
+  padding: 10px 25px;
+  border-radius: 3px;
   margin-bottom: 20px;
+}
+
+.regras-e-historico__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 28px;
+}
+
+.forum {
+  background-color: #1B1D2A;
+  padding: 15px 5px;
+  border-radius: 12px;
+  margin: 0px 16px 40px;
+}
+
+.forum__titulo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  color: #fff;
   text-align: center;
 }
 
-.historico__titulo {
-  color: #fff;
-  font-weight: 700;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.historico__colunas {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 5px;
-}
-
-.historico__titulo--colunas {
-  font-size: 20px;
-  text-transform: uppercase;
-  flex: 1;
-}
-
-.historico__titulo--preco, .historico__preco, .historico__titulo--status, .historico__status {
-  text-align: end;
-}
-
-.historico__data {
+.forum__topico {
   background-color: #444968;
+  padding: 10px;
   border-radius: 12px;
+  margin-top: 10px;
 }
 
-.historico__texto {
-  color: #fff;
+.forum__texto {
   font-weight: 400;
-  font-size: 16px;
-  /* text-align: justify; */
-  line-height: 23px;
-  flex: 1;
-}
-
-.historico__texto--data {
-  padding-left: 10px;
-  margin-bottom: 10px;
-}
-
-.historico__informacoes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 5px 0px 10px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 /* FOOTER */
