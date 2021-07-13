@@ -44,34 +44,47 @@
     </header>
     <main>
       <section class="login">
+
         <div class="login__div">
-          <form>
+          <form class="login__forms">
             <label for="email"></label>
-            <br />
             <input
               type="email"
               id="email"
               name="email"
-              value="seuemail@email.com"
+              placeholder="seuemail@email.com"
             />
-            <br />
             <label for="pass"></label>
-            <br />
             <input
               type="password"
               id="password"
               name="password"
-              value="******"
+              placeholder="******"
             />
           </form>
-
-          <div class="login__buttons">
-            <a class="login__btn-text" href="#" style="text-decoration: none">Cadastro</a>
-            <a class="login__btn-text" href="#" style="text-decoration: none">Esqueci a senha</a>
-          </div>
-
-          <input class="login__btn" type="submit" onclick="" value="LOGIN"/>
         </div>
+
+        <div class="login__buttons">
+          <a class="login__btn-text1" href="#" style="text-decoration: none">Cadastro</a>
+          <a class="login__btn-text2" href="#" style="text-decoration: none">Esqueci a senha</a>
+        </div>
+
+        <div class="login__submit">
+          <input class="login__btn" 
+          type="submit" onclick="" 
+          value="LOGIN"
+          style="
+          border-radius: 6px;
+          border-color: orange;
+          color: #fff;
+          background: linear-gradient(
+            156deg,
+            rgba(252, 207, 49, 1) 0%,
+            rgba(245, 85, 85, 1) 100%
+          );
+          padding: 2px 30px"/>
+        </div>
+
       </section>
     </main>
     <footer class="footer">
