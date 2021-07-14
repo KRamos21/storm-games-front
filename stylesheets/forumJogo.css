@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  background-color: #444968;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.menu-mobile {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-right: solid 1px white;
+  color: white;
+}
+
+.menu-mobile__imagem {
+  width: 25px;
+}
+
+.pesquisa-e-compras {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pesquisa {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+.regras-e-historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 16px 40px;
+}
+
+.regras-e-historico__ancora {
+  text-decoration: none;
+}
+
+.regras-e-historico__div {
+  display: flex;
+  align-items: center;
+  width: 343px;
+  background-color: #F27B13;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.regras-e-historico__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 28px;
+}
+
+.forum__titulo {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.forum__titulo--russo-one {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+}
+
+.forum__info {
+  background-color: #1B1D2A;
+  padding: 15px 5px;
+  border-radius: 12px;
+  margin: 30px 16px 40px;
+}
+
+.forum__info__dados {
+  background-color: #5470C4;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.forum__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.forum__topicos {
+  background-color: #1B1D2A;
+  padding-bottom: 15px;
+  border-radius: 12px;
+  margin: 0px 16px 40px;
+}
+
+.forum__faixa-info {
+  background-color: #5470C4;
+  padding: 15px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.forum__topico {
+  background-color: #444968;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 5px 0px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+  padding: 30px 15px 0px;
+}
+
+.media-social {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 10px;
+}
+
+.media-social__titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.media-social__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.termos-e-politicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.termos-e-politicas__p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
