@@ -19,7 +19,7 @@
     />
     <title>login-cadastro</title>
   </head>
-  <body class="container">
+  <body>
     <header class="header">
       <button class="menu-mobile">
         <img
@@ -42,7 +42,7 @@
         />
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="login">
 
         <div class="login__div">
@@ -65,8 +65,10 @@
         </div>
 
         <div class="login__buttons">
-          <a class="login__btn-text1" href="#" style="text-decoration: none">Cadastro</a>
-          <a class="login__btn-text2" href="#" style="text-decoration: none">Esqueci a senha</a>
+          <div class="login__btn-div"> 
+            <a class="login__btn-text" href="#" style="text-decoration: none">Cadastro</a></div>
+          <div class="login__btn-div">
+            <a class="login__btn-text" href="#" style="text-decoration: none">Esqueci a senha</a></div>
         </div>
 
         <div class="login__submit">
@@ -74,6 +76,7 @@
           type="submit" onclick="" 
           value="LOGIN"
           style="
+          text-align: center;
           border-radius: 6px;
           border-color: orange;
           color: #fff;
