@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    margin: 50px auto;
+    max-width: 380px;
+    width: 100%;
+  }
+
+  /* MAIN */
+  .recovery {
+    background-color: #1b1d2a;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .recovery__div {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 6px;
+    width: 95%;
+  }
+
+  .recovery__close-div {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .recovery__tittle {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .recovery__tittle-text {
+    font-family: "Russo One", sans-serif;
+    line-height: 25px;
+    font-size: 22px;
+  }
+
+  .recovery__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  input {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .recovery__email {
+    padding: 0 35px;
+  }
+
+  .recovery__submit {
+    padding: 0 20px;
+    border-radius: 6px;
+    color: #fff;
+    background: linear-gradient(
+      156deg,
+      rgba(114, 237, 242, 1) 0%,
+      rgba(81, 81, 229, 1) 100%
+    );
+    font-weight: bold;
+  }
+
+  .recovery__text-info {
+    margin: 0 10px 60px;
+    text-align: center;  
+    font-size: 13px;
+  }
