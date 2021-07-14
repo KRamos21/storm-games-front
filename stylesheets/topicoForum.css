@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  background-color: #444968;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.menu-mobile {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-right: solid 1px white;
+  color: white;
+}
+
+.menu-mobile__imagem {
+  width: 25px;
+}
+
+.pesquisa-e-compras {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pesquisa {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+.regras-e-historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 16px 20px;
+}
+
+.regras-e-historico__ancora {
+  text-decoration: none;
+}
+
+.regras-e-historico__div {
+  display: flex;
+  align-items: center;
+  width: 343px;
+  background-color: #F27B13;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.regras-e-historico__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 28px;
+}
+
+.titulo-do-jogo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.topico {
+  background-color: #1B1D2A;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0 16px 40px;
+}
+
+.topico__article {
+  margin-bottom: 20px;
+}
+
+
+.topico__article--com-borda {
+  border-bottom: solid 1px #fff;
+}
+
+.topico__titulo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.topico__titulo--centralizado {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.busca {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 24px;
+}
+
+.topico__texto {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.topico__texto--preto {
+  color: #000;
+  margin-left: 25px;
+}
+
+.topico__article--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444968;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.topico__div__info {
+  border-bottom: solid 1px #fff;
+  margin-bottom: 20px;
+}
+
+.topico__titulo--info {
+  font-size: 27px;
+}
+
+.topico__texto--margin {
+  margin-bottom: 15px;
+}
+
+.topico__botao {
+  width: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F27B13;
+  padding: 20px 10px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.topico__botao--info {
+  width: 200px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+.mensagem__caixa {
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.mensagem__faixa-superior {
+  display: flex;
+  align-items: center;
+  background-color: #5470C4;
+
+  padding: 10px 25px 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.mensagem__usuario {
+  margin-right: 15px;
+}
+
+.mensagem__corpo {
+  padding: 10px 15px;
+}
+
+.topico__titulo--mensagem {
+  color: #2A2D40;
+  font-size: 28px;
+}
+
+.topico__texto--mensagem {
+  color: #2A2D40;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.mensagem__novo-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+  padding: 30px 15px 0px;
+}
+
+.media-social {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 10px;
+}
+
+.media-social__titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.media-social__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.termos-e-politicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.termos-e-politicas__p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
