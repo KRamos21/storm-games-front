@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  background-color: #444968;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+
+.menu-mobile {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-right: solid 1px white;
+  color: white;
+}
+
+.menu-mobile__imagem {
+  width: 25px;
+}
+
+.pesquisa-e-compras {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pesquisa {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+.nome-jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nome-jogo__h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.nome-jogo__notas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-jogo__texto {
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.nome-jogo__circulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5470C4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.jogo, .info, .forum {
+  padding: 0px 16px;
+  margin-bottom: 40px;
+}
+
+.jogo__imagem {
+  margin-bottom: 30px;
+}
+
+.videos {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.videos__analise {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3vw;
+}
+
+.videos__youtube {
+  width: 100%;
+  max-width: 560px;
+  height: 9vh;
+  max-height: 315px;
+  margin-bottom: 10px;
+}
+
+.videos__info {
+  display: flex;
+  align-items: center;
+}
+
+.videos__circulo {
+  background-color: #5470C4;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.videos__texto {
+  font-size: 16px;
+  color: #fff;
+}
+
+.compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.compra__medias {
+  margin-bottom: 30px;
+}
+
+.compra__valor {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.compra__botao {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.compra__botao--azul {
+  background-color: #5470C4;
+  padding: 10px 25px;
+}
+
+.compra__botao--azul:first-child {
+  margin-right: 20vw;
+}
+
+.compra__botao--laranja {
+  font-size: 28px;
+  background-color: #F27B13;
+  padding: 20px 70px;
+}
+
+.requisitos {
+  background-color: #1B1D2A;
+  padding: 10px 10px 300px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.requisitos__h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+
+.reviews__destaque {
+  display: flex;
+  align-items: center;
+  background-color: #5470C4;
+  padding: 10px 5px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.reviews__destaque:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.reviews__circulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.texto {
+  font-size: 18px;
+  color: #fff;
+}
+
+.texto--14px {
+  font-size: 14px;
+  text-align: end;
+}
+
+.forum__article {
+  background-color: #1B1D2A;
+  border-radius: 12px;
+  padding: 15px 5px;
+  margin-bottom: 10px;
+}
+
+.forum__titulo {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.forum__topico {
+  background-color: #444968;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.forum__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+  padding: 30px 15px 0px;
+}
+
+.media-social {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 10px;
+}
+
+.media-social__titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.media-social__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.termos-e-politicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.termos-e-politicas__p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
