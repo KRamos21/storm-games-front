@@ -136,3 +136,16 @@
   font-weight: 700;
   line-height: 24px;
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .regras-e-historico {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .regras-e-historico__div {
+    margin-bottom: 0;
+  }
+}

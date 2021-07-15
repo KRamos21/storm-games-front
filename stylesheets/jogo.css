@@ -314,6 +314,8 @@ main {
   line-height: 24px;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 769px) {
   .nome-jogo {
     flex-direction: row;
