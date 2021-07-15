@@ -6,9 +6,6 @@
 .container {
   margin: auto;
   max-width: 375px;
-}
-
-body {
   background-color: #444968;
 }
 
@@ -375,7 +372,6 @@ a {
   font-weight: 700;
   line-height: 24px;
 }
-
 
 /*@media screen and (max-width: 500px){
   .container {
