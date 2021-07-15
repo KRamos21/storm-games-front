@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+}
+
+body {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #2a2d40;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: 0px;
+}
+
+.header__menu li {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 0px;
+  font-family: "Russo One", sans-serif;
+}
+
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  margin: 50px 20px 0px;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #1b1d2a;
+  max-height: 200px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.submenu img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.pedidos {
+  max-width: 950px;
+  width: 100%;
+  margin-left: 50px;
+  padding: 15px;
+  background-color: #1b1d2a;
+  border-radius: 10px;
+}
+
+.pedidos__busca {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.pedidos__box {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2d40;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 600px;
+  height: 100%;
+}
+
+.pedidos__box__item {
+  padding-bottom: 15px;
+}
+
+.pedidos__status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.pedidos__item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+.pedidos__item img {
+  padding-right: 15px;
+}
+
+.pedidos__item__nome {
+  padding-bottom: 15px;
+}
+
+.pedidos__opcoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pedidos__opcoes_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pedidos__opcoes_item a {
+  padding-right: 10px;
+}
+
+.footer {
+  margin: 40px auto;
+  background-color: #000000;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#footer__logo {
+  max-width: 312px;
+  width: 100%;
+}
+
+.footer__info ul {
+  padding-left: 0px;
+}
+
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__redes ul {
+  padding-left: 0px;
+}
+
+.footer__redes li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer__termos {
+  padding-bottom: 25px;
+}
+
+.footer__hr {
+  margin: 8px 40px;
+}
+
+.footer__termos li {
+  display: inline-block;
+  padding-right: 10px;
+}

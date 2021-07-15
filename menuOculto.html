@@ -19,59 +19,62 @@
     />
     <title>Menu Oculto</title>
   </head>
-  <body class="container">
-    <section class="menu">
-      <div class="menu__div">
-        <div class="menu__close">
-          <img
-            class="menu__close-img"
-            src="./images/menuOculto/FECHAR.svg"
-            onclick="close"
-          />
-        </div>
-        <div class="menu__search">
-          <form class="menu__searchbar">
-            <input class="menu__search-input"
-              type="text"
-              id="searchbar"
-              name="searchbar"
-              placeholder="Buscar"
-            />
-          </form>
-          <div class="menu__loupe">
+  <body>
+    <div class="container">
+      <section class="menu">
+        <div class="menu__div">
+          <div class="menu__close">
             <img
-              class="menu__loupe-img"
-              src="./images/menuOculto/loupe.svg"
-              onclick=""
+              class="menu__close-img"
+              src="./images/menuOculto/FECHAR.svg"
+              onclick="close"
+            />
+          </div>
+          <div class="menu__search">
+            <form class="menu__searchbar">
+              <input
+                class="menu__search-input"
+                type="text"
+                id="searchbar"
+                name="searchbar"
+                placeholder="Buscar"
+              />
+            </form>
+            <div class="menu__loupe">
+              <img
+                class="menu__loupe-img"
+                src="./images/menuOculto/loupe.svg"
+                onclick=""
+              />
+            </div>
+          </div>
+          <div class="menu__pages">
+            <ul class="menu__list">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">biblioteca</a>
+              </li>
+              <li>
+                <a href="#">fórum</a>
+              </li>
+              <li>
+                <a href="#">categorias</a>
+              </li>
+              <li>
+                <a href="#">suporte</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__stormgames">
+            <img
+              class="menu__stormgamesR"
+              src="./images/menuOculto/STORMGAMESR.svg"
             />
           </div>
         </div>
-        <div class="menu__pages">
-          <ul class="menu__list">
-            <li>
-              <a href="#">home</a>
-            </li>
-            <li>
-              <a href="#">biblioteca</a>
-            </li>
-            <li>
-              <a href="#">fórum</a>
-            </li>
-            <li>
-              <a href="#">categorias</a>
-            </li>
-            <li>
-              <a href="#">suporte</a>
-            </li>
-          </ul>
-        </div>
-        <div class="menu__stormgames">
-          <img
-            class="menu__stormgamesR"
-            src="./images/menuOculto/STORMGAMESR.svg"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

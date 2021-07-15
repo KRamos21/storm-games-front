@@ -20,88 +20,110 @@
     <title>login-cadastro</title>
   </head>
   <body>
-    <header class="header">
-      <button class="menu-mobile">
-        <img class="menu-mobile__imagem" src="./images/menu.svg" alt="Menu mobile">
-      </button>
-      <img class="logo--mobile" src="./images/logo-horizontal.svg" alt="Logo do website">
-      <div class="pesquisa-e-compras">
-        <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar">
-        <img class="carrinho-de-compras" src="./images/icone-compras.svg" alt="Carrinho de compras">
-      </div>
-    </header>
-    <main class="container">
-      <section class="login">
+    <div class="container">
+      <header class="header">
+        <button class="menu-mobile">
+          <img
+            class="menu-mobile__imagem"
+            src="./images/menu.svg"
+            alt="Menu mobile"
+          />
+        </button>
+        <img
+          class="logo--mobile"
+          src="./images/logo-horizontal.svg"
+          alt="Logo do website"
+        />
+        <div class="pesquisa-e-compras">
+          <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar" />
+          <img
+            class="carrinho-de-compras"
+            src="./images/icone-compras.svg"
+            alt="Carrinho de compras"
+          />
+        </div>
+      </header>
+      <main>
+        <section class="login">
+          <div class="login__div">
+            <form class="login__forms">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seuemail@email.com"
+              />
+              <label for="pass"></label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="******"
+              />
+            </form>
+          </div>
 
-        <div class="login__div">
-          <form class="login__forms">
-            <label for="email"></label>
+          <div class="login__buttons">
+            <div class="login__btn-div">
+              <a class="login__btn-text" href="#" style="text-decoration: none"
+                >Cadastro</a
+              >
+            </div>
+            <div class="login__btn-div">
+              <a class="login__btn-text" href="#" style="text-decoration: none"
+                >Esqueci a senha</a
+              >
+            </div>
+          </div>
+
+          <div class="login__submit">
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seuemail@email.com"
+              class="login__btn"
+              type="submit"
+              onclick=""
+              value="LOGIN"
+              style="
+                text-align: center;
+                border-radius: 6px;
+                border-color: orange;
+                color: #fff;
+                background: linear-gradient(
+                  156deg,
+                  rgba(252, 207, 49, 1) 0%,
+                  rgba(245, 85, 85, 1) 100%
+                );
+                padding: 2px 30px;
+              "
             />
-            <label for="pass"></label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="******"
-            />
-          </form>
-        </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="media-social">
+          <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
 
-        <div class="login__buttons">
-          <div class="login__btn-div"> 
-            <a class="login__btn-text" href="#" style="text-decoration: none">Cadastro</a></div>
-          <div class="login__btn-div">
-            <a class="login__btn-text" href="#" style="text-decoration: none">Esqueci a senha</a></div>
-        </div>
+          <article class="media-social__links">
+            <a class="media-social__a" href="https://www.facebook.com/">
+              <img src="./images/facebook-icon.svg" alt="Facebook" />
+            </a>
 
-        <div class="login__submit">
-          <input class="login__btn" 
-          type="submit" onclick="" 
-          value="LOGIN"
-          style="
-          text-align: center;
-          border-radius: 6px;
-          border-color: orange;
-          color: #fff;
-          background: linear-gradient(
-            156deg,
-            rgba(252, 207, 49, 1) 0%,
-            rgba(245, 85, 85, 1) 100%
-          );
-          padding: 2px 30px"/>
-        </div>
+            <a class="media-social__a" href="https://www.instagram.com/">
+              <img src="./images/instagram-icon.svg" alt="Instagram" />
+            </a>
 
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="media-social">
-        <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+            <a class="media-social__a" href="https://twitter.com/">
+              <img src="./images/twitter-icon.svg" alt="Twitter" />
+            </a>
+          </article>
+        </section>
 
-        <article class="media-social__links">
-          <a class="media-social__a" href="https://www.facebook.com/">
-            <img src="./images/facebook-icon.svg" alt="Facebook" />
-          </a>
-
-          <a class="media-social__a" href="https://www.instagram.com/">
-            <img src="./images/instagram-icon.svg" alt="Instagram" />
-          </a>
-
-          <a class="media-social__a" href="https://twitter.com/">
-            <img src="./images/twitter-icon.svg" alt="Twitter" />
-          </a>
-        </article>
-      </section>
-
-      <section class="termos-e-politicas">
-        <p class="termos-e-politicas__p">Termos de Serviço</p>
-        <p class="termos-e-politicas__p">Política de Privacidade</p>
-        <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
-      </section>
-    </footer>
+        <section class="termos-e-politicas">
+          <p class="termos-e-politicas__p">Termos de Serviço</p>
+          <p class="termos-e-politicas__p">Política de Privacidade</p>
+          <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

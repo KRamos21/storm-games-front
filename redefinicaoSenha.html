@@ -20,103 +20,110 @@
     <title>Redefinição de senha</title>
   </head>
   <body>
-    <header class="header">
-      <button class="menu-mobile">
+    <div class="container">
+      <header class="header">
+        <button class="menu-mobile">
+          <img
+            class="menu-mobile__imagem"
+            src="./images/menu.svg"
+            alt="Menu mobile"
+          />
+        </button>
         <img
-          class="menu-mobile__imagem"
-          src="./images/menu.svg"
-          alt="Menu mobile"
+          class="logo--mobile"
+          src="./images/logo-horizontal.svg"
+          alt="Logo do website"
         />
-      </button>
-      <img
-        class="logo--mobile"
-        src="./images/logo-horizontal.svg"
-        alt="Logo do website"
-      />
-      <div class="pesquisa-e-compras">
-        <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar" />
-        <img
-          class="carrinho-de-compras"
-          src="./images/icone-compras.svg"
-          alt="Carrinho de compras"
-        />
-      </div>
-    </header>
-    <main class="container">
+        <div class="pesquisa-e-compras">
+          <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar" />
+          <img
+            class="carrinho-de-compras"
+            src="./images/icone-compras.svg"
+            alt="Carrinho de compras"
+          />
+        </div>
+      </header>
+      <main>
         <section class="reset">
-            <div class="register__tittle">
-                <p class="reset__tittle-text">Redefinição de senha</p>
-            </div>
+          <div class="register__tittle">
+            <p class="reset__tittle-text">Redefinição de senha</p>
+          </div>
           <div class="reset__div">
-              <div class="reset__code">
-                    <form class="reset__form-code">
-                      <label  class="reset__code-label"        for="code"
-                        >Digite o código enviado junto ao e-mail de redefinição de senha:
-                      </label>
-                      <input
-                        class="reset__code-input"
-                        type="text"
-                        id="code"
-                        name="code"
-                        placeholder=""
-                      />
-                    </form>
-              </div>
-              <div class="reset__pass">
-                    <form class="reset__form-pass">
-                        <label      class="reset__pass-label"    for="pass">Crie uma senha:
-                        </label>
-                        <input
-                        class="reset__pass-input"
-                        type="password"
-                        id="pass"
-                        name="pass"
-                        placeholder=""
-                        /><br>
-                        <label      class="reset__pass-label"    for="pass">Digite a senha novamente:
-                        </label>
-                        <input
-                        class="reset__pass-input"
-                        type="password"
-                        id="pass"
-                        name="pass"
-                        placeholder=""/>
-                    </form>
-              </div>
-              <div class="reset__submit">
-                  <input
-                  class="reset__submit-btn"
-                  type="submit"
-                  onclick=""
-                  value="Alterar"/>
-              </div>
+            <div class="reset__code">
+              <form class="reset__form-code">
+                <label class="reset__code-label" for="code"
+                  >Digite o código enviado junto ao e-mail de redefinição de
+                  senha:
+                </label>
+                <input
+                  class="reset__code-input"
+                  type="text"
+                  id="code"
+                  name="code"
+                  placeholder=""
+                />
+              </form>
+            </div>
+            <div class="reset__pass">
+              <form class="reset__form-pass">
+                <label class="reset__pass-label" for="pass"
+                  >Crie uma senha:
+                </label>
+                <input
+                  class="reset__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                /><br />
+                <label class="reset__pass-label" for="pass"
+                  >Digite a senha novamente:
+                </label>
+                <input
+                  class="reset__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                />
+              </form>
+            </div>
+            <div class="reset__submit">
+              <input
+                class="reset__submit-btn"
+                type="submit"
+                onclick=""
+                value="Alterar"
+              />
+            </div>
           </div>
         </section>
-    </main>
-    <footer class="footer">
-      <section class="media-social">
-        <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+      </main>
+      <footer class="footer">
+        <section class="media-social">
+          <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
 
-        <article class="media-social__links">
-          <a class="media-social__a" href="https://www.facebook.com/">
-            <img src="./images/facebook-icon.svg" alt="Facebook" />
-          </a>
+          <article class="media-social__links">
+            <a class="media-social__a" href="https://www.facebook.com/">
+              <img src="./images/facebook-icon.svg" alt="Facebook" />
+            </a>
 
-          <a class="media-social__a" href="https://www.instagram.com/">
-            <img src="./images/instagram-icon.svg" alt="Instagram" />
-          </a>
+            <a class="media-social__a" href="https://www.instagram.com/">
+              <img src="./images/instagram-icon.svg" alt="Instagram" />
+            </a>
 
-          <a class="media-social__a" href="https://twitter.com/">
-            <img src="./images/twitter-icon.svg" alt="Twitter" />
-          </a>
-        </article>
-      </section>
+            <a class="media-social__a" href="https://twitter.com/">
+              <img src="./images/twitter-icon.svg" alt="Twitter" />
+            </a>
+          </article>
+        </section>
 
-      <section class="termos-e-politicas">
-        <p class="termos-e-politicas__p">Termos de Serviço</p>
-        <p class="termos-e-politicas__p">Política de Privacidade</p>
-        <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
-      </section>
-    </footer>
+        <section class="termos-e-politicas">
+          <p class="termos-e-politicas__p">Termos de Serviço</p>
+          <p class="termos-e-politicas__p">Política de Privacidade</p>
+          <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
