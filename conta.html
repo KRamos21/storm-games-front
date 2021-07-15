@@ -24,114 +24,155 @@
     </div>
   </header>
 
-  <main>
-    <section class="config">
-      <article class="config__article config__article--com-borda">
-        <h1 class="config__titulo">Configurações Gerais</h1>
-        <p class="config__texto">Gerencie os detalhes da conta que você compartilha conosco.</p>
+  <main class="main">
+    <section class="menu-lateral">
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/man.png" alt="Usuário">
+        <p class="menu-lateral__texto">Geral</p>
       </article>
 
-      <article class="config__article">
-        <h2 class="config__titulo">Informações da Conta</h2>
-        <p class="config__texto">ID: XXXXXX</p>
-  
-        <form class="config__caixa-info" action="">
-          <div class="config__informacao">
-            <label class="config__texto config__texto--menor" for="nomeDeUsuario">Nome de usuário:</label>
-            <input class="config__input" type="text" name="nomeDeUsuario" id="nomeDeUsuario" value="Lorem_ipsum">
-          </div>
-  
-            
-          <button class="config__caixa-info__botao" type="reset">
-            <img src="./images/pencil.png" alt="Lápis">
-          </button>
-        </form>
-  
-        <form class="config__caixa-info" action="">
-          <div class="config__informacao">
-            <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
-            <input class="config__input" type="email" name="email" id="email" value="lorem_ipsum@gmail.com">
-          </div>
-  
-            
-          <button class="config__caixa-info__botao" type="reset">
-            <img src="./images/pencil.png" alt="Lápis">
-          </button>
-        </form>
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/key.png" alt="Chave">
+        <p class="menu-lateral__texto">Senha e Segurança</p>
       </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/money.png" alt="Sinal monetário">
+        <p class="menu-lateral__texto">Transações</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/carteira.png" alt="Carteira">
+        <p class="menu-lateral__texto">Formas de pagamento</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/pedidos.png" alt="Prancheta de pedidos">
+        <p class="menu-lateral__texto">Pedidos</p>
+      </article>
+
+
+    </section>
+
+    <div class="main__config">
+      <section class="config">
+        <article class="config__article config__article--com-borda">
+          <h1 class="config__titulo">Configurações Gerais</h1>
+          <p class="config__texto">Gerencie os detalhes da conta que você compartilha conosco.</p>
+        </article>
+  
+        <article class="config__article">
+          <h2 class="config__titulo">Informações da Conta</h2>
+          <p class="config__texto">ID: XXXXXX</p>
+    
+          <div class="config__nome-e-email">
+            <form class="config__caixa-info" action="">
+              <div class="config__informacao">
+                <label class="config__texto config__texto--menor" for="nomeDeUsuario">Nome de usuário:</label>
+                <input class="config__input" type="text" name="nomeDeUsuario" id="nomeDeUsuario" value="Lorem_ipsum">
+              </div>
       
-      <form action="">
-        <article class="config__article">
-          <h2 class="config__titulo">Detalhes pessoais</h2>
-          <p class="config__texto">Gerencie seu nome e informações de contato. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
-  
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="nome">Nome:</label>
-              <input class="config__input" type="text" name="nome" id="nome" value="Lorem">
-            </div>
-          </div>
-          
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="sobrenome">Sobrenome:</label>
-              <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="Ipsum">
-            </div>
-          </div>
-  
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="idioma">Idioma de comunicação preferido:</label>
-              <input class="config__input" type="text" name="idioma" id="idioma" value="Português (Brasil)">
-            </div>
+              <button class="config__caixa-info__botao" type="reset">
+                <img src="./images/pencil.png" alt="Lápis">
+              </button>
+            </form>
+      
+            <form class="config__caixa-info" action="">
+              <div class="config__informacao">
+                <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
+                <input class="config__input" type="email" name="email" id="email" value="lorem_ipsum@gmail.com">
+              </div>
+         
+              <button class="config__caixa-info__botao" type="reset">
+                <img src="./images/pencil.png" alt="Lápis">
+              </button>
+            </form>
           </div>
         </article>
-  
-        <article class="config__article">
-          <h2 class="config__titulo">Endereço</h2>
-  
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="rua">Rua:</label>
-              <input class="config__input" type="text" name="rua" id="rua" value="Joaquina Lorem Ipsum">
+        
+        <form action="">
+          <article class="config__article">
+            <h2 class="config__titulo">Detalhes pessoais</h2>
+            <p class="config__texto">Gerencie seu nome e informações de contato. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
+            
+            <div class="config__nome-e-idioma">
+              <div class="config__nome-e-idioma__div">
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="nome">Nome:</label>
+                    <input class="config__input" type="text" name="nome" id="nome" value="Lorem">
+                  </div>
+                </div>
+                
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="sobrenome">Sobrenome:</label>
+                    <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="Ipsum">
+                  </div>
+                </div>
+              </div>
+      
+              <div class="config__caixa-info">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="idioma">Idioma de comunicação preferido:</label>
+                  <input class="config__input" type="text" name="idioma" id="idioma" value="Português (Brasil)">
+                </div>
+              </div>
             </div>
-          </div>
+          </article>
+    
+          <article class="config__article">
+            <h2 class="config__titulo">Endereço</h2>
   
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="numero">Número:</label>
-              <input class="config__input" type="text" name="numero" id="numero" value="2005">
+            <div class="config__endereco">
+  
+              <div class="config__rua-e-numero">
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="rua">Rua:</label>
+                    <input class="config__input" type="text" name="rua" id="rua" value="Joaquina Lorem Ipsum">
+                  </div>
+                </div>
+        
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="numero">Número:</label>
+                    <input class="config__input" type="text" name="numero" id="numero" value="2005">
+                  </div>
+                </div>
+              </div>
+  
+              <div class="config__cidade-e-pais">
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="cidade">Cidade:</label>
+                    <input class="config__input" type="text" name="cidade" id="cidade" value="São Paulo">
+                  </div>
+                </div>
+        
+                <div class="config__caixa-info">
+                  <div class="config__informacao">
+                    <label class="config__texto config__texto--menor" for="pais">País:</label>
+                    <input class="config__input" type="text" name="pais" id="pais" value="Brasil">
+                  </div>
+                </div>
+              </div>
             </div>
+          </article>
+    
+          <div class="config__div-botoes">
+            <button class="config__botao config__botao--margin" type="submit">Salvar mudanças</button>
+            <button class="config__botao" type="reset">Descartar mudanças</button>
           </div>
+        </form>
+      </section>
   
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="cidade">Cidade:</label>
-              <input class="config__input" type="text" name="cidade" id="cidade" value="São Paulo">
-            </div>
-          </div>
-  
-          <div class="config__caixa-info">
-            <div class="config__informacao">
-              <label class="config__texto config__texto--menor" for="pais">País:</label>
-              <input class="config__input" type="text" name="pais" id="pais" value="Brasil">
-            </div>
-          </div>
-        </article>
-  
-        <div class="config__div-botoes">
-          <button class="config__botao" type="submit">Salvar mudanças</button>
-          <button class="config__botao" type="reset">Descartar mudanças</button>
-        </div>
-      </form>
-
-    </section>
-
-    <section class="config config--excluir">
-      <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
-      <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta, incluindo todas as informações pessoais, compras, progresso nos jogos e conteúdo dentro dos jogos.</p>
-      <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
-    </section>
+      <section class="config config--excluir">
+        <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
+        <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta, incluindo todas as informações pessoais, compras, progresso nos jogos e conteúdo dentro dos jogos.</p>
+        <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
