@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  
+  body {
+    background-color: #444968;
+  }
+  
+  /* HEADER */
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 0;
+  }
+  
+  .menu-mobile {
+    padding: 5px 15px;
+    background-color: #000;
+    cursor: pointer;
+    border: #000;
+  }
+  
+  .menu-mobile__imagem {
+    width: 25px;
+  }
+  
+  .pesquisa-e-compras {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .pesquisa {
+    margin-right: 20px;
+  }
+  
+  /* MAIN */
+  .reset {
+    background-color: #1b1d2a;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .reset__div {
+    margin: 5px 10px;
+    width: 60%;
+  }
+
+  .reset__tittle-text {
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+  }
+    
+  label,
+  input {
+    color: #fff;
+    font-size: 12px;
+    line-height: 25px;
+  }
+  
+  .reset__pass {
+    padding-bottom: 10px;
+    padding-top: 3px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+  }
+  
+  .reset__form-code, 
+  .reset__form-pass,
+  .reset__submit-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  
+  .reset__submit-btn {
+    padding: 5px;
+    border-radius: 6px;
+    line-height: normal;
+    background: linear-gradient(
+      156deg,
+      rgba(114, 237, 242, 1) 0%,
+      rgba(81, 81, 229, 1) 100%
+    );
+    border-color: #000;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .reset__submit {
+    margin-top: 40px;
+  }
+
+  
+  /* FOOTER */
+  
+  .footer {
+    background-color: #000;
+    padding: 30px 15px 0px;
+  }
+  
+  .media-social {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 10px;
+  }
+  
+  .media-social__titulo {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .media-social__links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .termos-e-politicas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .termos-e-politicas__p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+   @media all and (min-width: 600px) and (max-width: 1440px){
+      .container {
+        width: 80%;
+      }
+    }
+    
+    @media all and (max-width: 600px){
+      .container {
+        width: 90%;
+      }
+    }
