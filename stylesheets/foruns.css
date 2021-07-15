@@ -40,11 +40,17 @@
 
 /* MAIN */
 
+.main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 .regras-e-historico {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 16px 40px;
+  margin-bottom: 40px;
 }
 
 .regras-e-historico__ancora {
@@ -68,21 +74,24 @@
   margin-left: 28px;
 }
 
-.forum {
+.forum__topicos {
   background-color: #1B1D2A;
   padding: 15px 5px;
   border-radius: 12px;
-  margin: 0px 16px 40px;
+  margin-bottom: 40px;
 }
 
 .forum__titulo {
-  font-family: 'Russo One', sans-serif;
   font-size: 30px;
   color: #fff;
   text-align: center;
 }
 
-.forum__topico {
+.forum__titulo--russo-one {
+  font-family: 'Russo One', sans-serif;
+}
+
+.lista__topico {
   background-color: #444968;
   padding: 10px;
   border-radius: 12px;
@@ -94,6 +103,26 @@
   font-size: 20px;
   color: #fff;
   text-align: center;
+}
+
+.forum__info {
+  display: none;
+  align-self: center;
+  width: 100%;
+  max-width: 460px;
+  background-color: #1B1D2A;
+  padding: 15px 5px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.forum__info__dados {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5470C4;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
 }
 
 /* FOOTER */
@@ -147,5 +176,43 @@
 
   .regras-e-historico__div {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .regras-e-historico {
+    justify-content: center;
+  }
+
+  .regras-e-historico__ancora:first-child {
+    margin-right: 50px;
+  }
+
+  .forum {
+    display: flex;
+  }
+
+  .forum__info {
+    display: block;
+    flex: 1;
+  }
+
+  .forum__topicos {
+    flex: 1.5;
+    margin-right: 30px;
+  }
+
+  .forum__titulo--russo-one {
+    font-size: 40px;
+  }
+
+  .forum__texto {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .forum__titulo--russo-one {
+    font-size: 50px;
   }
 }
