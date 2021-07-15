@@ -10,7 +10,7 @@
 
 main {
   background-color: #000;
-  background-image: url('../images/login-cad/fundo-login.jpg');
+  background-image: url("../images/login-cad/fundo-login.jpg");
   background-size: cover;
 }
 
@@ -83,7 +83,6 @@ input {
     rgba(114, 237, 242, 1) 0%,
     rgba(81, 81, 229, 1) 100%
   );
-
 }
 
 .login__btn-text {
@@ -143,8 +142,7 @@ input {
   line-height: 24px;
 }
 
-
-@media screen and (min-width: 376px) and (max-width: 1440px){
+@media screen and (min-width: 376px) and (max-width: 1440px) {
   .container {
     width: 70%;
   }
@@ -154,10 +152,9 @@ input {
     display: flex;
     flex-direction: column;
   }
-
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   .container {
     width: 69%;
   }
