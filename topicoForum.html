@@ -24,7 +24,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="regras-e-historico">
       <a class="regras-e-historico__ancora" href="#">
         <div class="regras-e-historico__div" href="">
@@ -48,54 +48,60 @@
         <h2 class="topico__titulo topico__titulo--centralizado">Título do tópico</h1>
       </article>
 
-      <article class="topico__article busca">
-        <img src="./images/topicoForum/lupa-preta.png" alt="Pesquisar no tópico">
-        <p class="topico__texto topico__texto--preto">Buscar neste tópico</p>
-      </article>
-
-      <article class="topico__article topico__article--info">
-        <div class="topico__div__info">
-          <h2 class="topico__titulo topico__titulo--info">Informações do tópico</h2>
-          <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong>  31/05/2021às 11:25 p.m.</p>
-          <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong>  3</p>
-        </div>
-        
-        <button class="topico__botao topico__botao--info" type="submit">Inscrever-se na discussão</button>
-      </article>
-
-      <article class="mensagem__caixa topico__article">
-        <div class="mensagem__faixa-superior">
-          <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
-          <p class="topico__texto">Usuário 1</p>
-        </div>
-
-        <div class="mensagem__corpo">
-          <h2 class="topico__titulo topico__titulo--mensagem">Título do tópico</h2>
-          <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
-        </div>
-      </article>
-
-      <article class="mensagem__caixa topico__article">
-        <div class="mensagem__faixa-superior">
-          <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
-          <p class="topico__texto">Usuário 2</p>
-        </div>
-
-        <div class="mensagem__corpo">
-          <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
-        </div>
-      </article>
-
-      <article class="mensagem__caixa topico__article">
-        <div class="mensagem__faixa-superior">
-          <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
-          <p class="topico__texto">Usuário 3</p>
-        </div>
-
-        <div class="mensagem__corpo">
-          <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
-        </div>
-      </article>
+      <div class="topico__div">
+        <article class="topico__busca-e-info">
+          <div class="topico__article busca">
+            <img src="./images/topicoForum/lupa-preta.png" alt="Pesquisar no tópico">
+            <p class="topico__texto topico__texto--preto">Buscar neste tópico</p>
+          </div>
+    
+          <div class="topico__article topico__article--info">
+            <div class="topico__info__div">
+              <h2 class="topico__titulo topico__titulo--info">Informações do tópico</h2>
+              <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong>  31/05/2021às 11:25 p.m.</p>
+              <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong>  3</p>
+            </div>
+            
+            <button class="topico__botao topico__botao--info" type="submit">Inscrever-se na discussão</button>
+          </div>
+        </article>
+  
+        <article class="topico__mensagens">
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 1</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <h2 class="topico__titulo topico__titulo--mensagem">Título do tópico</h2>
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+    
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 2</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+    
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 3</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
 
       <article class="mensagem__caixa topico__article">
         <div class="mensagem__faixa-superior">
