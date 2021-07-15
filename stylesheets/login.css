@@ -6,6 +6,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 main {
@@ -144,7 +145,7 @@ input {
 
 @media screen and (min-width: 376px) and (max-width: 1440px) {
   .container {
-    width: 70%;
+    width: 100%;
   }
 
   .login {
@@ -156,7 +157,7 @@ input {
 
 @media screen and (max-width: 1440px) {
   .container {
-    width: 69%;
+    width: 100%;
   }
 
   .login {
