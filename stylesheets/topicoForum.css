@@ -40,11 +40,17 @@
 
 /* MAIN */
 
+.main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 .regras-e-historico {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 16px 20px;
+  margin-bottom: 40px;
 }
 
 .regras-e-historico__ancora {
@@ -80,7 +86,7 @@
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
-  margin: 0 16px 40px;
+  margin-bottom: 40px;
 }
 
 .topico__article {
@@ -90,6 +96,12 @@
 
 .topico__article--com-borda {
   border-bottom: solid 1px #fff;
+}
+
+.topico__busca-e-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .topico__titulo {
@@ -107,6 +119,8 @@
 .busca {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 500px;
   background-color: #fff;
   padding: 10px 25px;
   border-radius: 24px;
@@ -127,13 +141,14 @@
 .topico__article--info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  max-width: 500px;
   background-color: #444968;
   padding: 10px 15px;
   border-radius: 12px;
 }
 
-.topico__div__info {
+.topico__info__div {
   border-bottom: solid 1px #fff;
   margin-bottom: 20px;
 }
@@ -158,6 +173,7 @@
 }
 
 .topico__botao--info {
+  align-self: center;
   width: 200px;
   padding: 10px 25px;
   margin-bottom: 10px;
@@ -242,4 +258,55 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .regras-e-historico {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .regras-e-historico__div {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .titulo-do-jogo {
+    font-size: 56px;
+  }
+
+  .topico__div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .topico__busca-e-info {
+    flex: 1;
+  }
+
+  .busca, .topico__article--info {
+    max-width: 430px;
+  }
+
+  .topico__mensagens {
+    flex: 1.5;
+    margin-right: 30px;
+  }
+
+  .mensagem__caixa {
+    margin-top: 0;
+  }
+
+  .topico__article {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titulo-do-jogo {
+    font-size: 72px;
+  }
 }

@@ -40,11 +40,41 @@
 
 /* MAIN */
 
+.main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.menu-lateral {
+  display: none;
+  background-color: #1B1D2A;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.menu-lateral__nav-link {
+  display: flex;
+  align-items: center;
+  background-color: #5470C4;
+  max-width: 335px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.menu-lateral__texto {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+
 .config {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
-  margin: 0 16px 40px;
+  margin-bottom: 40px;
 }
 
 .config__article {
@@ -186,4 +216,70 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .config__nome-e-email {
+    display: flex;
+  }
+
+  .config__caixa-info {
+    flex: 1;
+    max-width: 440px;
+  }
+
+  .config__caixa-info:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  .config__nome-e-idioma, .config__endereco {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .config__nome-e-idioma__div, .config__rua-e-numero, .config__cidade-e-pais {
+    display: flex;
+  }
+
+  .config__div-botoes {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .config__botao--margin {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    display: flex;
+    padding: 0 20px;
+  }
+  
+  .menu-lateral {
+    display: block;
+    align-self: flex-start;
+    margin-right: 30px;
+  }
+
+  .main__config {
+    flex: 1.5;
+  }
+
+  .config {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-lateral__texto {
+    font-size: 24px;
+  }
+
+  .config__div-botoes {
+    justify-content: flex-start;
+  }
 }

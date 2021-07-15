@@ -40,6 +40,11 @@
 
 /* MAIN */
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .nome-jogo {
   display: flex;
   flex-direction: column;
@@ -83,25 +88,27 @@
 }
 
 .jogo__imagem {
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .videos {
   display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .videos__analise {
   display: flex;
   flex-direction: column;
-  margin-right: 3vw;
+  padding: 0px 10px;
 }
 
 .videos__youtube {
   width: 100%;
-  max-width: 560px;
-  height: 9vh;
-  max-height: 315px;
+  max-width: 300px;
+  height: 27vw;
+  max-height: 200px;
   margin-bottom: 10px;
 }
 
@@ -113,7 +120,9 @@
 .videos__circulo {
   background-color: #5470C4;
   width: 3vw;
+  max-width: 22px;
   height: 3vw;
+  max-height: 22px;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -176,6 +185,7 @@
 
 .reviews__destaque {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #5470C4;
   padding: 10px 5px;
@@ -208,30 +218,58 @@
   text-align: end;
 }
 
-.forum__article {
+.lista--reviews {
+  display: none;
+}
+
+.lista {
   background-color: #1B1D2A;
   border-radius: 12px;
   padding: 15px 5px;
   margin-bottom: 10px;
 }
 
-.forum__titulo {
+.lista__titulo {
   font-size: 30px;
   color: #fff;
   text-align: center;
 }
 
-.forum__topico {
+.lista__topico {
   background-color: #444968;
+  text-align: justify;
   padding: 10px;
   border-radius: 12px;
   margin-top: 10px;
 }
 
-.forum__texto {
+.lista__topico--flex {
+  display: flex;
+  align-items: center;
+}
+
+.lista__usuario {
+  margin-right: 15px;
+}
+
+.lista__texto {
   font-weight: 400;
   font-size: 20px;
+  line-height: 1.2;
   color: #fff;
+}
+
+.lista__novo-comentario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444968;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.lista__texto--centralizado {
   text-align: center;
 }
 
@@ -274,4 +312,165 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .nome-jogo {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nome-jogo__h1 {
+    margin-bottom: 0px;
+  }
+
+  .videos__youtube {
+    height: 24vw;
+  }
+
+  .texto--14px {
+    display: none;
+  }
+
+  .reviews__relevantes {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .reviews__destaque:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .lista--reviews {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .nome-jogo__h1 {
+    font-size: 40px;
+  }
+
+  .nome-jogo__texto {
+    font-size: 22px;
+  }
+
+  .nome-jogo__circulo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .videos__youtube {
+    height: 21vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nome-jogo, .jogo, .info, .forum {
+    padding: 0 20px;
+  }
+  
+  .jogo {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .jogo__imagem {
+    flex: 1;
+  }
+
+  .videos {
+    margin-bottom: 60px;
+  }
+
+  .videos-e-compra {
+    flex: 1;
+  }
+
+  .videos__youtube {
+    height: 14vw;
+  }
+
+  .compra__botao--azul {
+    width: 200px;
+  }
+
+  .compra__botao--azul:first-child {
+    margin-right: 40px;
+  }
+
+  .compra__botao--laranja {
+    width: 400px;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  .requisitos {
+    flex: 1;
+    margin: 0 15px 0 0;
+  }
+
+  .reviews {
+    flex: 1;
+  }
+
+  .reviews__relevantes {
+    flex-direction: column;
+  }
+
+  .lista {
+    margin-bottom: 0;
+    padding: 15px;
+  }
+
+  .lista__titulo {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .lista__texto--centralizado {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nome-jogo__h1 {
+    font-size: 56px;
+  }
+
+  .nome-jogo__texto {
+    font-size: 25px;
+  }
+
+  .nome-jogo__circulo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .compra__medias {
+    margin-bottom: 50px;
+  }
+
+  .compra__valor {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nome-jogo__h1 {
+    font-size: 72px;
+  }
+
+  .nome-jogo__texto {
+    font-size: 28px;
+  }
+
+  .nome-jogo__circulo {
+    width: 80px;
+    height: 80px;
+  }
 }

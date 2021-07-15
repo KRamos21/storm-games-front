@@ -40,11 +40,17 @@
 
 /* MAIN */
 
+.main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 .regras-e-historico {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px 16px 40px;
+  margin-bottom: 40px;
 }
 
 .regras-e-historico__ancora {
@@ -68,6 +74,11 @@
   margin-left: 28px;
 }
 
+.forum {
+  display: flex;
+  flex-direction: column;
+}
+
 .forum__titulo {
   font-size: 30px;
   color: #fff;
@@ -77,16 +88,22 @@
 .forum__titulo--russo-one {
   font-family: 'Russo One', sans-serif;
   font-size: 36px;
+  margin-bottom: 40px;
 }
 
 .forum__info {
+  align-self: center;
+  width: 100%;
+  max-width: 460px;
   background-color: #1B1D2A;
   padding: 15px 5px;
   border-radius: 12px;
-  margin: 30px 16px 40px;
+  margin-bottom: 40px;
 }
 
 .forum__info__dados {
+  display: flex;
+  justify-content: space-between;
   background-color: #5470C4;
   padding: 10px;
   border-radius: 12px;
@@ -104,7 +121,7 @@
   background-color: #1B1D2A;
   padding-bottom: 15px;
   border-radius: 12px;
-  margin: 0px 16px 40px;
+  margin-bottom: 40px;
 }
 
 .forum__faixa-info {
@@ -118,6 +135,21 @@
   padding: 10px;
   border-radius: 12px;
   margin: 10px 5px 0px;
+}
+
+.forum__topicos__navegar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.forum__topicos__navegar--superior {
+    display: none;
+}
+
+.forum__texto__navegar {
+  margin: 0 20px;
 }
 
 /* FOOTER */
@@ -159,4 +191,70 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .regras-e-historico {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .regras-e-historico__div {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .regras-e-historico {
+    justify-content: center;
+  }
+
+  .regras-e-historico__ancora:first-child {
+    margin-right: 50px;
+  }
+
+  .forum__titulo--russo-one {
+    font-size: 56px;
+  }
+
+  .forum {
+    flex-direction: row-reverse;
+  }
+
+  .forum__info {
+    flex: 1;
+  }
+
+  .forum__topicos {
+    flex: 1.5;
+    margin-right: 30px;
+  }
+
+  .forum__texto {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .forum__titulo--russo-one {
+    font-size: 72px;
+    text-align: start;
+  }
+
+  .forum__info {
+   align-self: flex-start;
+  }
+
+  .forum__faixa-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .forum__topicos__navegar--superior {
+    display: flex;
+    margin-top: 0;
+  }
 }
