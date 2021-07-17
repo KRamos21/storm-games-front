@@ -82,3 +82,39 @@ input {
   text-align: center;
   font-size: 13px;
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .recovery {
+    width: 550px;
+    height: 320px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .recovery {
+    width: 650px;
+    height: 320px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .recovery {
+    width: 650px;
+    height: 320px;
+  }
+}
