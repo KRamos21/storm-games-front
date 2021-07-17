@@ -4,14 +4,16 @@
 }
 
 .container {
-  margin: 50px auto;
-  max-width: 320px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* MAIN */
 
 .menu {
   background-color: rgb(27, 29, 42, 80%);
+  min-width: 50%;
+  max-width: 60%;
 }
 
 .menu__div {
@@ -91,8 +93,35 @@ a:hover {
   width: 90%;
 }
 
-@media screen and (min-width: 150px) and (max-width: 320px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .container {
-    width: 90%;
+    width: 100%;
+  }
+
+  .menu {
+    width: 30%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .menu {
+    width: 30%
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .menu {
+    width: 30%;
   }
 }
