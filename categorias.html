@@ -17,6 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"/>
     <title>Categoria</title>
+    <script>
+      function abrirPopUp(){
+        document.getElementById("popUp").style.display = "block";
+      }
+      function fecharPopUp(){
+        document.getElementById("popUp").style.display = "none";
+      }
+
+    </script>
   </head>
   <body>
 
@@ -53,7 +62,7 @@
           <a class="menu__page-link" href="#">fórum</a>
         </li>
         <li class="menu__page">
-          <a class="menu__page-link" href="#">categorias</a>
+          <a class="menu__page-link" onclick="abrirPopUp()" href="#">categorias</a>
         </li>
         <li class="menu__page">
           <a class="menu__page-link" href="#">suporte</a>
@@ -96,11 +105,17 @@
       </div>
     </header>
 
+   
+
     <div class="Container Container-background">
+
+      <div id="popUp" style="display: none;position: relative;background-color: black; width: 600px; height: 300px;margin: auto;">
+        <input type="Button" onclick="fecharPopUp()" value="X" style="float: right;">
+     </div>
 
         <section class="main-reader">
             <div class="">
-              <p class="">Categoria </p><span id="spncategoria"> </span>
+              <p class="">Categoria "Ação" </p><span id="spncategoria"> </span>
             </div>
         </section>
         <label style="margin-left: 50px;">Jogos Recomendados</label>
@@ -148,7 +163,7 @@
             
                 
                 <div class="second-carrousel-img-container">
-                    <img src="../storm-games-front/images/categoria/csgo.jpg"/>
+                    <img src="../storm-games-front/images/categoria/açao_lançamento1.jpg"/>
                     <br/>
                     <div class="item-buttons">    
                     <span class="categoria-pagina">Pagina do Jogo</span>
@@ -156,7 +171,7 @@
                 </div>
                 </div>
                 <div class="second-carrousel-img-container">
-                    <img src="../storm-games-front/images/categoria/csgo.jpg"/>
+                    <img src="../storm-games-front/images/categoria/açao_lançamento2.jpg"/>
                     <br/>
                     <div class="item-buttons">    
                     <span class="categoria-pagina">Pagina do Jogo</span>
@@ -164,41 +179,83 @@
                 </div>
                 </div>
                 <div class="second-carrousel-img-container">
-                    <img src="../storm-games-front/images/categoria/csgo.jpg"/>
+                    <img src="../storm-games-front/images/categoria/açao_lançamento3.jpg"/>
                     <br/>
                     <div class="item-buttons">    
                     <span class="categoria-pagina">Pagina do Jogo</span>
                     <span class="categoria-jogar">Jogar</span>
                 </div>
                 </div>
-
-
             </div>
-            <br/>
-            <p>Mais Vendidos da Categoria</p>
-            <div class="second-carrousel">
+            <br>          
             
+            <div class="second-carrousel">
+              <p>Mais Vendidos da Categoria</p>
                 <div>
-                    <img src="../storm-games-front/images/categoria/csgo.jpg"/>
-                    <img src="../storm-games-front/images/categoria/maxpayne3.jpg"/>
-                    <img src="../storm-games-front/images/categoria/wordsoflegends.jpg"/>
+                  <div class="second-carrousel-img-container">
+                    <img src="../storm-games-front/images/categoria/açao_maisvendido1.jpg"/>
+                    <br/>
+                    <div class="item-buttons">    
+                    <span class="categoria-pagina">Pagina do Jogo</span>
+                    <span class="categoria-jogar">Jogar</span>
+                </div>
+              </div>
+              <div class="second-carrousel-img-container">
+                    <img src="../storm-games-front/images/categoria/açao_maisvendido2.jpg"/>
+                    <br/>
+                    <div class="item-buttons">    
+                    <span class="categoria-pagina">Pagina do Jogo</span>
+                    <span class="categoria-jogar">Jogar</span>
+                </div>
+              </div>
+              <div class="second-carrousel-img-container">
+                    <img src="../storm-games-front/images/categoria/açao_maisvendido3.jpg"/>
+                    <br/>
+                    <div class="item-buttons">    
+                    <span class="categoria-pagina">Pagina do Jogo</span>
+                    <span class="categoria-jogar">Jogar</span>
+                </div>
+              </div>  
                 </div>
             </div>
             <br/>
             <p>Em Breve</p>
             <div class="second-carrousel">
-            
-                <div>
-                    <img src="../storm-games-front/images/categoria/csgo.jpg"/>
-                    <img src="../storm-games-front/images/categoria/maxpayne3.jpg"/>
-                    <img src="../storm-games-front/images/categoria/wordsoflegends.jpg"/>
-                </div>
+              
+              <div>
+                <div class="second-carrousel-img-container">
+                  <img src="../storm-games-front/images/categoria/açao_embreve1.jpg"/>
+                  <br/>
+                  <div class="item-buttons">    
+                  <span class="categoria-pagina">Pagina do Jogo</span>
+                  <span class="categoria-jogar">Jogar</span>
+              </div>
             </div>
+            <div class="second-carrousel-img-container">
+                  <img src="../storm-games-front/images/categoria/açao_embreve2.jpg"/>
+                  <br/>
+                  <div class="item-buttons">    
+                  <span class="categoria-pagina">Pagina do Jogo</span>
+                  <span class="categoria-jogar">Jogar</span>
+              </div>
+            </div>
+            <div class="second-carrousel-img-container">
+                  <img src="../storm-games-front/images/categoria/açao_embreve3.jpg"/>
+                  <br/>
+                  <div class="item-buttons">    
+                  <span class="categoria-pagina">Pagina do Jogo</span>
+                  <span class="categoria-jogar">Jogar</span>
+              </div>
+            </div>  
+              </div>
+          </div>
 
         </div>
 
         </div>
       </div>
+
+      
          
 
 
