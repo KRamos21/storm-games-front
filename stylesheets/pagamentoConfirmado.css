@@ -12,17 +12,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
-  font-family: "Russo One", sans-serif;
-}
-
 /* HEADER MOBILE*/
 
 .header {
   display: flex;
   align-items: center;
   background-color: #000;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -100,79 +96,43 @@ h1, h2 {
 .container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 
-h1 {
-  font-size: 3rem;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.destaques {
-  display: flex;
-  margin-top: 40px;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  align-items: center;
-}
-
-.destaques__item {
-  max-width: 300px;
-  width: 100%;
-  text-align: center;
-  padding: 40px;
-  border-radius: 10px;
-  background: linear-gradient(
-    156deg,
-    rgba(114, 237, 242, 1) 0%,
-    rgba(81, 81, 229, 1) 100%
-  );
-  border-color: #000;
-  font-size: 30px;  
-}
-
-.assuntos {
+.boxPagamento {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.assuntos__header {
-  display: flex;
   justify-content: center;
-  font-size: 2rem;
-  font-family: "Russo One", sans-serif;
+  margin-top: 40px;
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
   padding: 15px;
-  margin: 30px 0px ;
+  background-color: #1B1D2A;
 }
 
-
-.assuntos__box {
+.boxPagamento__info {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} 
-
-.icon__img {
-  width: 14px;
-  height: 14px;
-  margin-right: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.assuntos__item {
-  padding: 20px;
+.boxPagamento__texto {
+  max-width: 350px;
+  width: 100%;
+  text-align: justify;
+  font-style: italic;
 }
-
-.text__item {
-
+.boxPagamento__tabela {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
-.link__item {
-  padding-top: 15px;
-  margin-left: 23px;
+.boxPagamento__tabela td {
+  padding: 5px;
 }
 
 .footer {
@@ -214,11 +174,20 @@ h1 {
   line-height: 24px;
 }
 
+
 /* Very small devices (smarthphones and small
 tablets, 767px and down)*/
 @media (max-width: 767px) {
   .header__medium-devices {
     display: none;
+  }
+
+  .boxPagamento {
+    margin: 15px 15px;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
 

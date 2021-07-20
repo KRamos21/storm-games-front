@@ -19,20 +19,78 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"><img src="./images/Lincoln/Logo.png" alt="Logo" /></a>
-      <nav>
-        <ul class="header__menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Biblioteca</a></li>
-          <li><a href="">Fóruns</a></li>
-          <li><a href="">Categorias</a></li>
-        </ul>
-      </nav>
-      <input type="search" placeholder="Pesquisar" />
-      <a href="#">
-        <img src="./images/Lincoln/Carrinho.png" alt="Carrinho de Compras" />
+      <button class="menu-mobile">
+        <img class="menu-mobile__imagem" src="./images/menu.svg" alt="Menu mobile">
+      </button>
+      <img class="logo--mobile" src="./images/logo-horizontal.svg" alt="Logo do website">
+      <div class="pesquisa-e-compras">
+        <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar">
+        <img class="carrinho-de-compras" src="./images/icone-compras.svg" alt="Carrinho de compras">
+      </div>
+    </header>
+
+    <header class="header__medium-devices">
+      <a class="menu__desktop" href="#">
+        <img
+          class="logo__desktop"
+          src="./images/menu-desktop/logoEleita.PNG"
+          alt="logotipo desktop"
+          width="110px"
+          height="65px"
+        />
       </a>
-      <a href="#"><img src="./images/Lincoln/User.png" alt="Usuário" /></a>
+      <ul class="menu__pages">
+        <li class="menu__page">
+          <a class="menu__page-link" href="#">home</a>
+        </li>
+        <li class="menu__page">
+          <a class="menu__page-link" href="#">biblioteca</a>
+        </li>
+        <li class="menu__page">
+          <a class="menu__page-link" href="#">fórum</a>
+        </li>
+        <li class="menu__page">
+          <a class="menu__page-link" href="#">categorias</a>
+        </li>
+        <li class="menu__page">
+          <a class="menu__page-link" href="#">suporte</a>
+        </li>
+      </ul>
+      <form class="menu__searchbar">
+        <input
+          class="menu__searchbar-input"
+          type="text"
+          id="searchbar"
+          name="searchbar"
+          placeholder="Buscar"
+        />
+      </form>
+      <div class="menu__loupe">
+        <img
+          class="menu__loupe-img"
+          src="./images/menuOculto/loupe.svg"
+          onclick=""
+        />
+      </div>
+      <div class="menu__shopping">
+        <img
+          class="shopping-cart"
+          src="./images/menu-desktop/carrinho.svg"
+          alt="carrinho de compras"
+          width="22px"
+          height="22px"
+        />
+      </div>
+      <div class="menu__user">
+        <a class="user" href="#">
+          <img
+            class="user-login"
+            src="./images/menu-desktop/user.svg"
+            alt="login do usuário"
+            width="60px"
+            height="60px"
+        /></a>
+      </div>
     </header>
     <main class="container">
         <h1>Suporte ao Jogador</h1>
@@ -41,10 +99,88 @@
             <button type="submit">BUSCAR</button>
         </form>
 
-        <section class="duvidas__destaques">            
-                <a href="#" class="botao__destaque">COMPRAS</a>
-                <a href="#" class="botao__destaque">MINHA CONTA</a>
-                <a href="#" class="botao__destaque">JOGOS</a>
+        <section class="destaques">
+          <div class="destaques__item">COMPRAS</div>
+          <div class="destaques__item">MINHA CONTA</div>
+          <div class="destaques__item">JOGOS</div>
+        </section>
+
+        <section class="assuntos">
+          <div class="assuntos__header">Assuntos comuns</div>
+          <div class="assuntos__box">
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a>
+            </div>
+          </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a></div>           
+            </div>
+            <div class="assuntos__item">
+              <span class="icon__item"><img class="icon__img" src="./images/Lincoln/icon-assuntos.png" alt=""></span>
+              <span class="text__item">Lorem Ipsum is not simply random text</span>              
+              <div class="link__item"><a href="#">Ler mais</a></div>           
+            </div>
+
+          </div>
+
         </section>
         
 
@@ -53,50 +189,28 @@
       
     </main>
     <footer class="footer">
-      <section class="footer__items">
-        <img id="footer__logo" src="./images/Lincoln/Logo-footer.svg" alt="" />
-        <div class="footer__info">
-        <ul>
-          <h3>Lorem ipsum</h3>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
-      </div>
-      <div class="footer__info">
-        <ul >
-          <h3>Lorem ipsum</h3>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
-      </div>
-      <div class="footer__redes">
-        <div><h3>Já segue a gente nas redes?</h3></div>
-        <div>
-        <ul>         
-          <li>
-            <a href="#"><img src="./images/facebook-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/instagram-icon.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./images/Lincoln/Twitter.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-      </div>
+      <section class="media-social">
+        <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+
+        <article class="media-social__links">
+          <a class="media-social__a" href="https://www.facebook.com/">
+            <img src="./images/facebook-icon.svg" alt="Facebook" />
+          </a>
+
+          <a class="media-social__a" href="https://www.instagram.com/">
+            <img src="./images/instagram-icon.svg" alt="Instagram" />
+          </a>
+
+          <a class="media-social__a" href="https://twitter.com/">
+            <img src="./images/twitter-icon.svg" alt="Twitter" />
+          </a>
+        </article>
       </section>
-      <section class="footer__termos">
-        <hr class="footer__hr" />
-        <ul>
-          <li><a href="#"></a>Termos de Serviço</li>
-          <li><a href="#"></a>Política de Privacidade</li>
-          <li><a href="#"></a>Política de Reembolso da Loja</li>
-        </ul>
+
+      <section class="termos-e-politicas">
+        <p class="termos-e-politicas__p">Termos de Serviço</p>
+        <p class="termos-e-politicas__p">Política de Privacidade</p>
+        <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
       </section>
     </footer>
   </body>

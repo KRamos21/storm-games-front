@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erro - Pagamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/erroPagamento.css"/>
+</head>
+<body>
+  <header class="header">
+    <button class="menu-mobile">
+      <img class="menu-mobile__imagem" src="./images/menu.svg" alt="Menu mobile">
+    </button>
+    <img class="logo--mobile" src="./images/logo-horizontal.svg" alt="Logo do website">
+    <div class="pesquisa-e-compras">
+      <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar">
+      <img class="carrinho-de-compras" src="./images/icone-compras.svg" alt="Carrinho de compras">
+    </div>
+  </header>
+
+  <header class="header__medium-devices">
+    <a class="menu__desktop" href="#">
+      <img
+        class="logo__desktop"
+        src="./images/menu-desktop/logoEleita.PNG"
+        alt="logotipo desktop"
+        width="110px"
+        height="65px"
+      />
+    </a>
+    <ul class="menu__pages">
+      <li class="menu__page">
+        <a class="menu__page-link" href="#">home</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="#">biblioteca</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="#">fórum</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="#">categorias</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="#">suporte</a>
+      </li>
+    </ul>
+    <form class="menu__searchbar">
+      <input
+        class="menu__searchbar-input"
+        type="text"
+        id="searchbar"
+        name="searchbar"
+        placeholder="Buscar"
+      />
+    </form>
+    <div class="menu__loupe">
+      <img
+        class="menu__loupe-img"
+        src="./images/menuOculto/loupe.svg"
+        onclick=""
+      />
+    </div>
+    <div class="menu__shopping">
+      <img
+        class="shopping-cart"
+        src="./images/menu-desktop/carrinho.svg"
+        alt="carrinho de compras"
+        width="22px"
+        height="22px"
+      />
+    </div>
+    <div class="menu__user">
+      <a class="user" href="#">
+        <img
+          class="user-login"
+          src="./images/menu-desktop/user.svg"
+          alt="login do usuário"
+          width="60px"
+          height="60px"
+      /></a>
+    </div>
+  </header>
+        <main class="container">
+          <section class="boxErroPagamento">
+            <div class="boxErroPagamento__header">
+              <div><img src="./images/Lincoln/Erro - pagamento cartão.svg" alt=""></div>
+              <div><h4>Ocorreu um erro...</h4></div>
+              <div><h2>O seu cartão recusou o pagamento</h2></div>
+            </div>
+            <section class="boxErroPagamento__info">
+              <h3>O que você pode fazer?</h3>
+              <div>
+                <ol>
+                  <li>Clique no botão de “Revisar dados do pagamento” para efetuar a correção ou escolher outro cartão. </li>
+                  <div class="boxErroPagamento__revisar"><a href="#"><img src="./images/Lincoln/Revisar dados - botão.svg" alt=""></a></div>                 
+                  <li>Tente usar outra forma de pagamento</li>
+                  <div class="boxErroPagamento__pgt">
+                    <div class="boxErroPagamento__opcao"><a href="#"><img src="./images/Lincoln/tipo-pagamento/pix.png" alt=""></a></div>
+                    <div class="boxErroPagamento__opcao"><a href="#"><img src="./images/Lincoln/tipo-pagamento/boleto.png" alt=""></a></div>
+                    <div class="boxErroPagamento__opcao"><a href="#"><img src="./images/Lincoln/tipo-pagamento/bitcoin.png" alt=""></a></div>
+                  </div>
+                  <li>Ligue para o emissor do cartão para autorizar este pagamento. </li>
+                </ol>
+              </div>
+            </section>
+          </section>
+          
+
+          
+      </main>
+      <footer class="footer">
+        <section class="media-social">
+          <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+  
+          <article class="media-social__links">
+            <a class="media-social__a" href="https://www.facebook.com/">
+              <img src="./images/facebook-icon.svg" alt="Facebook" />
+            </a>
+  
+            <a class="media-social__a" href="https://www.instagram.com/">
+              <img src="./images/instagram-icon.svg" alt="Instagram" />
+            </a>
+  
+            <a class="media-social__a" href="https://twitter.com/">
+              <img src="./images/twitter-icon.svg" alt="Twitter" />
+            </a>
+          </article>
+        </section>
+  
+        <section class="termos-e-politicas">
+          <p class="termos-e-politicas__p">Termos de Serviço</p>
+          <p class="termos-e-politicas__p">Política de Privacidade</p>
+          <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+        </section>
+      </footer>
+</body>
+</html>
