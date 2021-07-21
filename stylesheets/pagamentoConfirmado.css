@@ -97,13 +97,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 15px auto;
 }
 
 .boxPagamento {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
   max-width: 700px;
   width: 100%;
   border: 1px solid black;
@@ -135,10 +135,12 @@ body {
   padding: 5px;
 }
 
+/* FOOTER */
+
 .footer {
+  margin-top: 20px;
   background-color: #000;
   padding: 30px 15px 0px;
-  margin-top: 30px;
 }
 
 .media-social {
@@ -174,6 +176,85 @@ body {
   line-height: 24px;
 }
 
+/* FOOTER DESKTOP */
+.superior__infos {
+  background-color: #000;
+  display: flex;
+  max-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.div__links {
+  display: flex;
+}
+
+.footer__links,
+.tittle__links {
+  margin: 0 20px;
+  padding-left: 0;
+}
+
+.footer__page-link {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.tittle__links,
+.terms-and-policies__p {
+  color: #fff;
+  text-align: left;
+  font-weight: lighter;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media__title {
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+.socialmedia__a,
+.terms-and-policies__link {
+  text-decoration: none;
+}
+
+.socialmedia__img {
+  width: 25px;
+  height: 25px;
+}
+
+.terms-and-policies {
+  display: flex;
+  font-size: 10px;
+  margin: 0 20px 10px 20px;
+  gap: 30px;
+}
+
+.terms {
+  border-top: 0.5px solid #fff;
+  width: 100%;
+  background-color: #000;
+}
+
 
 /* Very small devices (smarthphones and small
 tablets, 767px and down)*/
@@ -189,6 +270,10 @@ tablets, 767px and down)*/
   h1 {
     text-align: center;
   }
+
+  .footer__desktop {
+    display: none;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -197,11 +282,21 @@ tablets, 767px and down)*/
     display: none;
   }
 
+  .footer {
+    display: none;
+  }
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .header {
     display: none;
   }
+
+  .footer {
+    display: none;
+  }
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -212,3 +307,8 @@ tablets, 767px and down)*/
   .header__medium-devices {
     justify-content: space-evenly;
   }
+
+  .footer {
+    display: none;
+  }
+} 
