@@ -430,6 +430,11 @@ tablets, 767px and down)*/
   .footer__desktop {
     display: none;
   }
+
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
