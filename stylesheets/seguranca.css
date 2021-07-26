@@ -428,6 +428,16 @@
   }
   
   .footer__page-link {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__medium-devices {
+    justify-content: space-evenly;
+  }
+
+  .footer__page-link {
     font-size: 13px;
   }
 }

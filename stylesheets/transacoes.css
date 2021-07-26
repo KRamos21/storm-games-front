@@ -40,11 +40,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   height: 12vh;
   width: 100%;
 }
@@ -87,11 +87,40 @@
 
 /* MAIN */
 
+.main {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.menu-lateral {
+  display: none;
+  background-color: #1B1D2A;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.menu-lateral__nav-link {
+  display: flex;
+  align-items: center;
+  background-color: #5470C4;
+  max-width: 335px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.menu-lateral__texto {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+
 .historico {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
-  margin: 0 16px 40px;
+  margin-bottom: 40px;
 }
 
 .historico__article {
@@ -196,6 +225,11 @@
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -274,83 +308,54 @@
   height: 30px;
 }
 
-/* Very small devices (smarthphones and small
-tablets, 767px and down)*/
-@media (max-width: 767px) {
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .header {
+    display: none;
+  }
+
   .header__medium-devices {
+    display: flex;
+  }
+
+  .footer {
     display: none;
   }
 
   .footer__desktop {
-    display: none;
+    display: block;
   }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
+@media (min-width: 1000px) {
+  .main {
+    display: flex;
+    padding: 0 20px;
   }
+
+  .menu-lateral {
+    display: block;
+    align-self: flex-start;
+    margin-right: 30px;
+  }
+
 
   .historico {
-    margin: 20px 10px;
+    flex: 1.5;
   }
 
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-  
   .footer__page-link {
     font-size: 11px;
   }
-
-  .historico {
-    margin: 20px 10px;
-  }
 }
 
-/* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-
-  .header {
-    display: none;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
   }
 
-  .footer {
-    display: none;
-  }
-
   .footer__page-link {
     font-size: 13px;
-  }
-
-  .historico {
-    margin: 20px 10px;
   }
 }
