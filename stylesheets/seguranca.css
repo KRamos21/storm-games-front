@@ -41,11 +41,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   height: 12vh;
   width: 100%;
 }
@@ -149,6 +149,12 @@
   line-height: 23px;
 }
 
+.config__article--senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .config__caixa-info {
   display: flex;
   justify-content: space-between;
@@ -157,7 +163,7 @@
   max-width: 440px;
   background-color: #444968;
   padding: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 12px;
 }
 
@@ -266,6 +272,11 @@
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -345,44 +356,28 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 767px) {
-  .header__medium-devices {
-    display: none;
-  }
-
-  .footer__desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .main {
-    padding: 20px 16px;;
-  }
-
-  .config__h1 {
-    text-align: center;
-  }
-
-  .config__article--senha {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (min-width: 769px) {
   .header {
     display: none;
   }
 
+  .header__medium-devices {
+    display: flex;
+  }
+
   .footer {
     display: none;
+  }
+
+  .footer__desktop {
+    display: block;
   }
 }
 
 @media (min-width: 1000px) {
   .main {
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
   }
   
   .menu-lateral {
@@ -397,10 +392,6 @@
 
   .config {
     padding: 15px;
-  }
-
-  .config__h1 {
-    text-align: start;
   }
 
   .senha__div {
@@ -434,10 +425,6 @@
 
   .config__botao:nth-child(2) {
     margin-left: 20px;
-  }
-
-  .footer {
-    display: none;
   }
   
   .footer__page-link {
