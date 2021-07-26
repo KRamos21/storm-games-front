@@ -3,6 +3,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0 auto;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -191,7 +195,7 @@ input {
 .superior__infos {
   background-color: #000;
   display: flex;
-  max-height: 100vh;
+  max-height: 400px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-end;
@@ -321,6 +325,10 @@ tablets, 767px and down)*/
   .footer {
     display: none;
   }
+  
+  .footer__page-link {
+    font-size: 11px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -347,5 +355,9 @@ tablets, 767px and down)*/
 
   .footer {
     display: none;
+  }
+  
+  .footer__page-link {
+    font-size: 13px;
   }
 }

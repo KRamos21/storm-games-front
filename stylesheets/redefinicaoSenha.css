@@ -9,6 +9,10 @@
   background-color: #444968;
 }
 
+body {
+  margin: 0;
+}
+
 /* HEADER MOBILE */
 
 .header {
