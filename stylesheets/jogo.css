@@ -40,11 +40,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 30px;
   height: 12vh;
   width: 100%;
 }
@@ -89,6 +89,7 @@
 
 main {
   max-width: 1440px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -130,7 +131,6 @@ main {
 }
 
 .jogo, .info, .forum {
-  padding: 0px 16px;
   margin-bottom: 40px;
 }
 
@@ -362,6 +362,11 @@ main {
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -441,21 +446,8 @@ main {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 767px) {
-  .header__medium-devices {
-    display: none;
-  }
 
-  .footer__desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .main {
-    padding: 20px 16px;
-  }
-
+@media (min-width: 769px) {
   .nome-jogo {
     flex-direction: row;
     justify-content: space-evenly;
@@ -493,13 +485,17 @@ main {
   .footer {
     display: none;
   }
+
+  .header__medium-devices {
+    display: flex;
+  }
+
+  .footer__desktop {
+    display: block;
+  }
 }
 
 @media (min-width: 900px) {
-  .main {
-    padding: 20px 16px;
-  }
-
   .nome-jogo__h1 {
     font-size: 40px;
   }
@@ -516,14 +512,6 @@ main {
   .videos__youtube {
     height: 21vw;
   }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
   
   .footer__page-link {
     font-size: 11px;
@@ -532,10 +520,6 @@ main {
 
 @media (min-width: 1000px) {
   .main {
-    padding: 20px 16px;
-  } 
-
-  .nome-jogo, .jogo, .info, .forum {
     padding: 0 20px;
   }
   
@@ -602,25 +586,9 @@ main {
   .lista__texto--centralizado {
     text-align: left;
   }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-  
-  .footer__page-link {
-    font-size: 11px;
-  }
 }
 
 @media (min-width: 1200px) {
-  .main {
-    padding: 20px 16px;
-  }
-
   .nome-jogo__h1 {
     font-size: 56px;
   }
@@ -641,14 +609,6 @@ main {
   .compra__valor {
     margin-bottom: 30px;
   }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
   
   .footer__page-link {
     font-size: 13px;
@@ -656,10 +616,6 @@ main {
 }
 
 @media (min-width: 1400px) {
-  .main {
-    padding: 20px 16px;
-  }
-  
   .nome-jogo__h1 {
     font-size: 72px;
   }
@@ -671,17 +627,5 @@ main {
   .nome-jogo__circulo {
     width: 80px;
     height: 80px;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-  
-  .footer__page-link {
-    font-size: 13px;
   }
 }

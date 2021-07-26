@@ -3,10 +3,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.body {
   background-color: #444968;
-  margin: 0;
-  width: 100%;
 }
 
 /* HEADER MOBILE*/
@@ -16,15 +14,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
-  width: 100%;
+  margin-bottom: 40px;
 }
 
 .menu-mobile {
-  padding: 5px 15px;
-  background-color: #000;
   cursor: pointer;
-  border: #000;
+  padding: 5px 15px;
+  border-right: solid 1px white;
 }
 
 .menu-mobile__imagem {
@@ -44,11 +40,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   height: 12vh;
 }
 
@@ -87,6 +83,7 @@
   position: relative;
   top: 8px;
 }
+
 /* MAIN */
 
 .main {
@@ -160,6 +157,11 @@
   padding: 10px;
   margin-top: 20px;
   border-radius: 12px;
+}
+
+.config__caixa-info--oculta {
+  opacity: 0;
+  display: none;
 }
 
 .config__informacao {
@@ -268,6 +270,11 @@
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -348,43 +355,7 @@
 
 /* MEDIA QUERIES */
 
-/* Very small devices (smarthphones and small
-tablets, 789px and down)*/
-@media (max-width: 789px) {
-  .header__medium-devices {
-    display: none;
-  }
-
-  .footer__desktop {
-    display: none;
-  }
-}
-
-/* Small devices (tablets, 790px and up) */
-@media (min-width: 790px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .header__medium-devices {
-    max-width: 100;
-  }
-
-  .footer {
-    display: none;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .container {
-    width: 100%;
-  }
-
+@media (min-width: 769px) {
   .config__nome-e-email {
     display: flex;
   }
@@ -392,6 +363,10 @@ tablets, 789px and down)*/
   .config__caixa-info {
     flex: 1;
     max-width: 440px;
+  }
+
+  .config__caixa-info--oculta {
+    display: block;
   }
 
   .config__caixa-info:nth-child(odd) {
@@ -419,17 +394,25 @@ tablets, 789px and down)*/
   .header {
     display: none;
   }
-
+  
+  .header__medium-devices {
+    max-width: 100;
+  }
+  
   .footer {
     display: none;
+  }
+
+  .header__medium-devices {
+    display: flex;
+  }
+
+  .footer__desktop {
+    display: block;
   }
 }
 
 @media (min-width: 1000px) {
-  .container {
-    width: 100%;
-  }
-
   .main {
     display: flex;
     padding: 0 20px;
@@ -448,14 +431,6 @@ tablets, 789px and down)*/
   .config {
     padding: 15px;
   }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
   
   .footer__page-link {
     font-size: 11px;
@@ -463,10 +438,6 @@ tablets, 789px and down)*/
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 100%;
-  }
-
   .menu-lateral__texto {
     font-size: 24px;
   }
@@ -475,16 +446,8 @@ tablets, 789px and down)*/
     justify-content: flex-start;
   }
 
-  .header {
-    display: none;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
-  }
-
-  .footer {
-    display: none;
   }
 
   .footer__page-link {
