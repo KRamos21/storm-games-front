@@ -40,11 +40,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   height: 12vh;
   width: 100%;
 }
@@ -214,6 +214,11 @@
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -294,17 +299,15 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 767px) {
+@media (min-width: 769px) {
+  .header {
+    display: none;
+  }
+
   .header__medium-devices {
-    display: none;
+    display: flex;
   }
 
-  .footer__desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
   .regras-e-historico {
     flex-direction: row;
     justify-content: space-evenly;
@@ -314,30 +317,26 @@
     margin-bottom: 0;
   }
 
-  .main {
-    padding: 20px 16px;
-  }
-
-  .header {
-    display: none;
-  }
-
   .footer {
     display: none;
+  }
+
+  .footer__desktop {
+    display: block;
   }
 }
 
 @media (min-width: 900px) {
+  .main {
+    padding: 0 20px;
+  }
+  
   .regras-e-historico {
     justify-content: center;
   }
 
   .regras-e-historico__ancora:first-child {
     margin-right: 50px;
-  }
-
-  .main {
-    padding: 20px 16px;
   }
 
   .forum {
@@ -361,14 +360,6 @@
   .forum__texto {
     text-align: start;
   }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
   
   .footer__page-link {
     font-size: 11px;
@@ -380,22 +371,10 @@
     font-size: 50px;
   }
 
-  .main {
-    padding: 20px 16px;
-  }
-
-  .header {
-    display: none;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
   }
-
-  .footer {
-    display: none;
-  }
-
+  
   .footer__page-link {
     font-size: 13px;
   }

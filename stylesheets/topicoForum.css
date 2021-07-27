@@ -41,11 +41,11 @@
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   background-color: #000;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   height: 12vh;
   width: 100%;
 }
@@ -309,6 +309,11 @@
 }
 
 /* FOOTER DESKTOP */
+
+.footer__desktop {
+  display: none;
+}
+
 .superior__infos {
   background-color: #000;
   display: flex;
@@ -389,19 +394,13 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 767px) {
+@media (min-width: 769px) {
+  .header {
+    display: none;
+  }
+
   .header__medium-devices {
-    display: none;
-  }
-
-  .footer__desktop {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .main {
-    padding: 20px 16px;
+    display: flex;
   }
 
   .regras-e-historico {
@@ -413,18 +412,18 @@
     margin-bottom: 0;
   }
 
-  .header {
-    display: none;
-  }
-
   .footer {
     display: none;
+  }
+  
+  .footer__desktop {
+    display: block;
   }
 }
 
 @media (min-width: 900px) {
   .main {
-    padding: 20px 16px;
+    padding: 0 20px;
   }
 
   .titulo-do-jogo {
@@ -457,12 +456,13 @@
     margin-bottom: 40px;
   }
 
-  .header {
-    display: none;
+  .mensagem__novo-post {
+    flex-direction: row;
   }
 
-  .footer {
-    display: none;
+  .topico__botao--novo-post {
+    flex: 1;
+    margin: 0 20px;
   }
   
   .footer__page-link {
@@ -471,24 +471,12 @@
 }
 
 @media (min-width: 1200px) {
-  .main {
-    padding: 20px 16px;
-  }
-
   .titulo-do-jogo {
     font-size: 72px;
   }
 
-  .header {
-    display: none;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
-  }
-
-  .footer {
-    display: none;
   }
 
   .footer__page-link {
