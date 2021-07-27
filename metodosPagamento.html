@@ -103,16 +103,46 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
+    <section class="menu-lateral">
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/man.png" alt="Usuário">
+        <p class="menu-lateral__texto">Geral</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/key.png" alt="Chave">
+        <p class="menu-lateral__texto">Senha e Segurança</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/money.png" alt="Sinal monetário">
+        <p class="menu-lateral__texto">Transações</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/carteira.png" alt="Carteira">
+        <p class="menu-lateral__texto">Formas de pagamento</p>
+      </article>
+
+      <article class="menu-lateral__nav-link">
+        <img src="./images/conta/pedidos.png" alt="Prancheta de pedidos">
+        <p class="menu-lateral__texto">Pedidos</p>
+      </article>
+
+
+    </section>
+
     <section class="cartao">
       <article class="cartao__article cartao__article--com-borda">
         <h1 class="cartao__titulo">Formas de pagamento</h1>
         <p class="cartao__texto">Gerencie suas formas de pagamento.</p>
       </article>
-
+      
+      <h2 class="cartao__titulo">Carteira</h2>
+      
       <form action="">
         <article class="cartao__article cartao__article--com-borda">
-          <h2 class="cartao__titulo">Carteira</h2>
 
           <div class="cartao__caixa">
             <div class="cartao__faixa-superior">
@@ -121,15 +151,20 @@
             </div>
 
             <div class="cartao__corpo-info">
-              <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
-              <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
-              <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
-              <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Endereço de Cobrança:</p>
-              <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
-              <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
-              <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
-              <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
-              <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              <div>
+                <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
+                <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
+              </div>
+
+              <div>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito cartao__endereco">Endereço de Cobrança:</p>
+                <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
+                <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
+                <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
+                <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
+                <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              </div>
             </div>  
 
             <div class="cartao__caixa__botoes">
@@ -145,15 +180,20 @@
             </div>
 
             <div class="cartao__corpo-info">
-              <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
-              <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
-              <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
-              <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Endereço de Cobrança:</p>
-              <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
-              <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
-              <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
-              <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
-              <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              <div>
+                <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
+                <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
+              </div>
+
+              <div>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito cartao__endereco">Endereço de Cobrança:</p>
+                <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
+                <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
+                <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
+                <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
+                <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              </div>
             </div>
 
             <div class="cartao__caixa__botoes">
@@ -161,11 +201,11 @@
               <button class="cartao__caixa__botao" type="submit">Editar</button>
             </div>
           </div>
-
         </article>
-  
+        
+        <h2 class="cartao__titulo cartao__titulo--centralizado">Adicione uma nova forma de pagamento</h2>
+        
         <div class="cartao__div-botoes">
-          <h2 class="cartao__titulo cartao__titulo--centralizado">Adicione uma nova forma de pagamento</h2>
           <button class="cartao__botao" type="submit">Cartão de crédito</button>
           <button class="cartao__botao" type="reset">Cartão de débito</button>
         </div>
