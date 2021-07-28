@@ -2,10 +2,10 @@
   box-sizing: border-box;
   list-style: none;
   color: white;
+  text-decoration: none;
 }
 
 body {
-  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   background-color: #2a2d40;
@@ -43,8 +43,6 @@ body {
 .pesquisa {
   margin-right: 20px;
 }
-
-
 
 /* HEADER DESKTOP */
 .header__medium-devices {
@@ -94,33 +92,45 @@ body {
 }
 
 .container {
-  display: flex;
-  margin: 15px 15px;
-  
-}
-
-.submenu {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  background-color: #1b1d2a;
-  max-height: 250px;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.submenu img {
-  max-width: 250px;
+  max-width: 1440px;
   width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 15px 15px;
+}
+
+.menu-lateral {
+  display: block;
+  align-self: flex-start;
+  margin-right: 30px;
+  background-color: #1b1d2a;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.menu-lateral__nav-link {
+  display: flex;
+  align-items: center;
+  background-color: #5470c4;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.menu-lateral__texto {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 0 10px;
 }
 
 .pedidos {
-  max-width: 950px;
   width: 100%;
   padding: 15px;
   background-color: #1b1d2a;
   border-radius: 10px;
-  margin-left: 15px;
 }
 
 .pedidos__busca {
@@ -142,7 +152,6 @@ body {
 
 .pedidos__box__item {
   padding-bottom: 15px;
-  
 }
 
 .pedidos__status {
@@ -314,7 +323,7 @@ tablets, 767px and down)*/
     display: none;
   }
 
-  .submenu {
+  .menu-lateral {
     display: none;
   }
 
@@ -339,7 +348,7 @@ tablets, 767px and down)*/
     max-width: 120px;
     width: 100%;
   }
-  
+
   .pedidos__item__nome {
     padding-bottom: 10px;
     font-size: 0.7rem;
@@ -366,7 +375,7 @@ tablets, 767px and down)*/
   }
 
   .pedidos__opcoes {
-    justify-content: space-around
+    justify-content: space-around;
   }
 
   .footer {
@@ -381,13 +390,13 @@ tablets, 767px and down)*/
   }
 
   .pedidos__opcoes {
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
 
   .footer {
     display: none;
   }
-  
+
   .footer__page-link {
     font-size: 11px;
   }
@@ -398,7 +407,6 @@ tablets, 767px and down)*/
   .header {
     display: none;
   }
-
 
   .header__medium-devices {
     justify-content: space-evenly;
