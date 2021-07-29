@@ -213,7 +213,11 @@ main {
 
 .compra__botao--laranja {
   font-size: 28px;
-  background-color: #F27B13;
+  background: linear-gradient(
+    156deg,
+    rgba(252, 207, 49, 1) 0%,
+    rgba(245, 85, 85, 1) 100%
+  );
   padding: 20px 70px;
 }
 

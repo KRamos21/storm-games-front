@@ -203,7 +203,11 @@
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-  background-color: #F27B13;
+  background: linear-gradient(
+    156deg,
+    rgba(252, 207, 49, 1) 0%,
+    rgba(245, 85, 85, 1) 100%
+  );
   padding: 20px 10px;
   border-radius: 3px;
   margin-bottom: 30px;
@@ -438,10 +442,6 @@
 }
 
 @media (min-width: 1200px) {
-  .menu-lateral__texto {
-    font-size: 24px;
-  }
-
   .config__div-botoes {
     justify-content: flex-start;
   }
